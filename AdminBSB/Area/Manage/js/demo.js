@@ -30,9 +30,9 @@ function setSkinListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.demo-choose-skin');
 
-    if (!isFirstTime){
-      $el.slimScroll({ destroy: true }).height('auto');
-      $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
     }
 
     $el.slimscroll({
@@ -50,9 +50,9 @@ function setSettingListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.right-sidebar .demo-settings');
 
-    if (!isFirstTime){
-      $el.slimScroll({ destroy: true }).height('auto');
-      $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
     }
 
     $el.slimscroll({
@@ -78,7 +78,7 @@ function activateNotificationAndTasksScroll() {
 }
 
 //Google Analiytics ======================================================================================
-addLoadEvent(loadTracking);
+//addLoadEvent(loadTracking);
 var trackingId = 'UA-30038099-6';
 
 function addLoadEvent(func) {

@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     @*<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">*@
     <link href="~/Area/Manage/css/GoogleFonts/css/googleapis.css" rel="stylesheet" type="text/css" />
-    <link href="~/Area/Manage/css/GoogleFonts/css/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" rel="stylesheet" type="text/css" />
+    <link href="~/Area/Manage/css/GoogleFonts/css/googleapisicons.css" rel="stylesheet" type="text/css" />
     @*<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">*@
 
     <!-- Bootstrap Core Css -->
@@ -33,6 +33,51 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="~/Area/Manage/css/themes/all-themes.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery Core Js -->
+    <script src="~/Area/Manage/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="~/Area/Manage/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="~/Area/Manage/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/Area/Manage/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Area/Manage/plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="~/Area/Manage/plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/Area/Manage/js/admin.js"></script>
+    <script src="~/Area/Manage/js/pages/tables/jquery-datatable.js"></script>
+
+    <!-- Demo Js -->
+    <script src="~/Area/Manage/js/demo.js"></script>
 </head>
 <body class="theme-red">
     <!-- Page Loader -->
@@ -89,26 +134,29 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li>
-                        <a href="../../index.html">
+                    <li >@*class="active"*@
+                        <a href="/MaterialDesign/index">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
+                        <a href="/NewJoiners/index">
+                            <i class="material-icons">text_fields</i>
+                            <span>New Joiners_Final_BC&IS</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">swap_calls</i>
-                            <span>User Interface (UI)</span>
+                            <span>For your information</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../../pages/ui/alerts.html">Alerts</a>
+                                <a href="../../pages/ui/alerts.html">新员工入职指南</a>
                             </li>
                             <li>
-                                <a href="../../pages/ui/animations.html">Animations</a>
-                            </li>
-                            <li>
-                                <a href="../../pages/ui/badges.html">Badges</a>
+                                <a href="../../pages/ui/animations.html">Materials_ACN Alert_Global v1</a>
                             </li>
                         </ul>
                     </li>
@@ -237,38 +285,7 @@
         @RenderBody()
     </section>
 
-    <!-- Jquery Core Js -->
-    <script src="~/Area/Manage/plugins/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core Js -->
-    <script src="~/Area/Manage/plugins/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="~/Area/Manage/plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="~/Area/Manage/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="~/Area/Manage/plugins/node-waves/waves.js"></script>
-
-    <!-- Jquery DataTable Plugin Js -->
-    <script src="~/Area/Manage/plugins/jquery-datatable/jquery.dataTables.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
-    <script src="~/Area/Manage/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
-
-    <!-- Custom Js -->
-    <script src="~/Area/Manage/js/admin.js"></script>
-    <script src="~/Area/Manage/js/pages/tables/jquery-datatable.js"></script>
-
-    <!-- Demo Js -->
-    <script src="~/Area/Manage/js/demo.js"></script>
+    
 
 
 </body>
