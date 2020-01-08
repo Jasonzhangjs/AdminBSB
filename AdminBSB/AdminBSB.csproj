@@ -128,6 +128,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Area\Manage\css\GoogleFonts\css\googleapis.css" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\googleapisicons.css" />
     <Content Include="Area\Manage\css\materialize.css" />
     <Content Include="Area\Manage\css\style.css" />
     <Content Include="Area\Manage\css\style.min.css" />
@@ -3636,6 +3638,21 @@
     <Content Include="Area\Manage\plugins\tinymce\skins\lightgray\fonts\tinymce.eot" />
     <Content Include="Area\Manage\plugins\tinymce\skins\lightgray\fonts\tinymce.ttf" />
     <Content Include="Area\Manage\plugins\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfBBc4.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu4mxK.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu4WxKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu5mxKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu72xKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu7GxKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu7mxKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\KFOmCnqEu92Fr1Mu7WxKOzY.woff2" />
+    <Content Include="Area\Manage\css\GoogleFonts\css\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
