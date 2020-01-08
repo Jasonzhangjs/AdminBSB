@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Area\Manage\Controllers\MaterialDesignController.cs" />
+    <Compile Include="Area\Manage\Controllers\MenuListController.cs" />
     <Compile Include="Area\Manage\Controllers\NewJoinersController.cs" />
     <Compile Include="Area\Manage\Controllers\NewProController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -3684,6 +3685,7 @@
     <Content Include="Views\NewPro\Index.cshtml" />
     <Content Include="Views\MaterialDesign\Index.cshtml" />
     <Content Include="Views\NewJoiners\Index.cshtml" />
+    <Content Include="Views\MenuList\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

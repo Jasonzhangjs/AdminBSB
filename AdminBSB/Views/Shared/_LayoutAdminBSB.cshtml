@@ -131,37 +131,9 @@
         <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
             <!-- Menu -->
-            <div class="menu">
-                <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
-                    <li >@*class="active"*@
-                        <a href="/MaterialDesign/index">
-                            <i class="material-icons">home</i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/NewJoiners/index">
-                            <i class="material-icons">text_fields</i>
-                            <span>New Joiners_Final_BC&IS</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">swap_calls</i>
-                            <span>For your information</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="../../pages/ui/alerts.html">新员工入职指南</a>
-                            </li>
-                            <li>
-                                <a href="../../pages/ui/animations.html">Materials_ACN Alert_Global v1</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            @{
+                Html.RenderAction("Index", "MenuList");
+            }
             <!-- #Menu -->
         </aside>
         <!-- #END# Left Sidebar -->
@@ -285,7 +257,7 @@
         @RenderBody()
     </section>
 
-    
+
 
 
 </body>
