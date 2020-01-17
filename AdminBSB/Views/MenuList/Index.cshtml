@@ -9,19 +9,24 @@
 
         @{
 
-                string url = HttpContext.Current.Request.Url.LocalPath;
+            string url = HttpContext.Current.Request.Url.LocalPath;
 
-                string[] urlSplit = url.Split('/');
+            string[] urlSplit = url.Split('/');
 
-                string test = "";
+            string test = "";
+            
+                
+                <li class="active">
+                    <a href="/MaterialDesign/index">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
 
 
-            <li class="active">
-                <a href="/MaterialDesign/index">
-                    <i class="material-icons">home</i>
-                    <span>Home</span>
-                </a>
-            </li>
+            
+
+
             <li>
                 <a href="/NewJoiners/index">
                     <i class="material-icons">text_fields</i>
