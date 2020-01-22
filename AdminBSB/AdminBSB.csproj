@@ -118,6 +118,7 @@
     <Compile Include="Area\Manage\Controllers\MenuListController.cs" />
     <Compile Include="Area\Manage\Controllers\NewJoinersController.cs" />
     <Compile Include="Area\Manage\Controllers\NewProController.cs" />
+    <Compile Include="Area\Manage\Controllers\OneOneController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -3680,6 +3681,7 @@
     <Content Include="Views\MaterialDesign\Index.cshtml" />
     <Content Include="Views\NewJoiners\Index.cshtml" />
     <Content Include="Views\MenuList\Index.cshtml" />
+    <Content Include="Views\OneOne\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

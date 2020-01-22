@@ -1,4 +1,4 @@
-﻿
+﻿@model AdminBSB.Area.Manage.Controllers.MenuLists
 @{
     Layout = null;
 }
@@ -8,50 +8,41 @@
         <li class="header">MAIN NAVIGATION</li>
 
         @{
-
+            //ViewBag.Title = "asp.net mvc";
             string url = HttpContext.Current.Request.Url.LocalPath;
+            //var list = @ViewBag.menulist;
 
             string[] urlSplit = url.Split('/');
 
-            string test = "";
-            
-                
-                <li class="active">
-                    <a href="/MaterialDesign/index">
-                        <i class="material-icons">home</i>
-                        <span>Home</span>
-                    </a>
-                </li>
+            int count = 0;
+            { @Html.Raw("<li class='active'><a href='../NewJoiners/Index'><i class='material-icons'>home</i><span>Home</span></a></li>")}
+            foreach (var i in Model.Menus)
+            {
+                var menuList = Model.Menus.Where(p => urlSplit.Contains(p.Area) && p.Area == i.Area).ToList();
+                var inCurrentPage = Model.Menus.Where(p => urlSplit.Contains(p.Controller)).FirstOrDefault();
+                //var parentmenu = menuList.Where(p => p.isParentMenu && inCurrentPage.ID >= p.ID).OrderByDescending(p => p.ID).FirstOrDefault();
 
+                int Nowid = i.ID;
 
-            
+                //string ahref = "";
+                if (i.ParentID == null)
+                {
+                    if (count == 0)
+                    {
+                        { @Html.Raw("<li><a href='javascript:void(0);'class='menu-toggle'><i class='material-icons'>swap_calls</i><span>" + i.Name + "</span></a><ul class='ml-menu'>")}
+                    }
+                    else
+                    {
+                        { @Html.Raw("</ul></li><li><a href='javascript:void(0);'class='menu-toggle'><i class='material-icons'>swap_calls</i><span>" + i.Name + "</span></a><ul class='ml-menu'>")}
+                    }
+                }
+                else
+                {
+                    { @Html.Raw("<li><a href='../" + i.Controller + "/Index'>" + i.Name + "</a></li>")}
 
-
-            <li>
-                <a href="/NewJoiners/index">
-                    <i class="material-icons">text_fields</i>
-                    <span>New Joiners_Final_BC&IS</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">swap_calls</i>
-                    <span>For your information</span>
-                </a>
-                <ul class="ml-menu">
-                    <li>
-                        <a href="../../pages/ui/alerts.html">新员工入职指南</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/ui/animations.html">Materials_ACN Alert_Global v1</a>
-                    </li>
-                </ul>
-            </li>
+                }
+                count++;
+            }
         }
-
-
-       
-
-        
     </ul>
 </div>
